@@ -182,6 +182,7 @@
         1,
         null,
         1,
+        1,
         null
       ],
       "/Users/colinarmstrong/Turing/mod2/day_hike/app/helpers/application_helper.rb": [
@@ -242,6 +243,17 @@
         null,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
         null
       ],
       "/Users/colinarmstrong/Turing/mod2/day_hike/spec/model/trip_spec.rb": [
@@ -286,19 +298,19 @@
         1,
         null,
         1,
-        7,
+        8,
         null,
         null,
         1,
-        7,
+        8,
         null,
         null,
         1,
-        7,
+        8,
         null,
         null,
         1,
-        7,
+        8,
         null,
         null
       ],
@@ -314,7 +326,7 @@
         null,
         null,
         1,
-        6,
+        7,
         null,
         null
       ],
@@ -334,8 +346,15 @@
         1,
         1,
         null
+      ],
+      "/Users/colinarmstrong/Turing/mod2/day_hike/app/controllers/trails_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1532709876
+    "timestamp": 1532710076
   }
 }

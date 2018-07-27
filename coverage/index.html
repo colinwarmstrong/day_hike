@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-27T10:44:36-06:00">2018-07-27T10:44:36-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-07-27T10:47:56-06:00">2018-07-27T10:47:56-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.25
+         1.26
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>22</b> files in total.
-    <b>126</b> relevant lines. 
-    <span class="green"><b>126</b> lines covered</span> and
+    <b>23</b> files in total.
+    <b>137</b> relevant lines. 
+    <span class="green"><b>137</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -61,13 +61,23 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#b3dc33176a2c3df14a2553d96984798a14bdf7d7" class="src_link" title="app/controllers/trails_controller.rb">app/controllers/trails_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#f56eed880bbc1c7119647b551ddf94e13ecb417f" class="src_link" title="app/controllers/trips_controller.rb">app/controllers/trips_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>9</td>
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>2.2</td>
+        <td>2.4</td>
       </tr>
       
       <tr>
@@ -107,7 +117,7 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>3.2</td>
+        <td>3.5</td>
       </tr>
       
       <tr>
@@ -243,9 +253,9 @@
       <tr>
         <td class="strong"><a href="#128f8c0e41e02a9fc6ea9b053784d2fe90c74a0e" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>4</td>
-        <td>2</td>
-        <td>2</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -253,9 +263,9 @@
       <tr>
         <td class="strong"><a href="#c1d210f0b58a5687f271ad7457f9f4ee53f02465" class="src_link" title="spec/features/user_sees_one_trip_spec.rb">spec/features/user_sees_one_trip_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>54</td>
-        <td>37</td>
-        <td>37</td>
+        <td>65</td>
+        <td>44</td>
+        <td>44</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -323,6 +333,55 @@
 </div>
 
       
+        <div class="source_table" id="b3dc33176a2c3df14a2553d96984798a14bdf7d7">
+  <div class="header">
+    <h3>app/controllers/trails_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class TrailsController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @trail = Trail.find(params[:id])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="f56eed880bbc1c7119647b551ddf94e13ecb417f">
   <div class="header">
     <h3>app/controllers/trips_controller.rb</h3>
@@ -373,8 +432,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="7">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="7">
+          <span class="hits">7</span>
           
           <code class="ruby">    @trip = Trip.includes(:trails).find(params[:id])</code>
         </li>
@@ -551,8 +610,8 @@
           <code class="ruby">  def total_hiking_distance</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="6">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="6">
+          <span class="hits">8</span>
           
           <code class="ruby">    trails.sum(:length)</code>
         </li>
@@ -575,8 +634,8 @@
           <code class="ruby">  def average_hiking_distance</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="10">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="10">
+          <span class="hits">8</span>
           
           <code class="ruby">    trails.average(:length)</code>
         </li>
@@ -599,8 +658,8 @@
           <code class="ruby">  def longest_hiking_distance</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="14">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="14">
+          <span class="hits">8</span>
           
           <code class="ruby">    trails.maximum(:length)</code>
         </li>
@@ -623,8 +682,8 @@
           <code class="ruby">  def shortest_hiking_distance</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="18">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="8" data-linenumber="18">
+          <span class="hits">8</span>
           
           <code class="ruby">    trails.minimum(:length)</code>
         </li>
@@ -1840,8 +1899,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1867,7 +1926,13 @@
           <code class="ruby">  resources :trips, only: [:index, :show]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  resources :trails, only: [:show]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -1883,8 +1948,8 @@
     <h3>spec/features/user_sees_one_trip_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>37</b> relevant lines. 
-      <span class="green"><b>37</b> lines covered</span> and
+      <b>44</b> relevant lines. 
+      <span class="green"><b>44</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2210,7 +2275,73 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;they can click a link to go to a trail show page&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    trip = Trip.create(name: &#39;Test 1&#39;, start_date: Date.new(2018, 6, 27), end_date: Date.new(2018, 6, 28))</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    trail_1 = trip.trails.create(name: &#39;Trail 1&#39;, length: 6, address: &#39;123 Main St&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    trail_2 = trip.trails.create(name: &#39;Trail 2&#39;, length: 10, address: &#39;321 Oak St&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit trip_path(trip)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link trail_1.name</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(current_path).to eq(trail_path(trail_1))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
           
           
           <code class="ruby">end</code>

@@ -6,7 +6,7 @@
 <h3>Shortest Hiking Distance: <%= @trip.shortest_hiking_distance %></h3>
 
 <% @trip.trails.each do |trail| %>
-  <%= trail.name %>
+  <%= link_to trail.name, trail_path(trail) %>
   <%= trail.length %>
   <%= trail.address %>
 <% end %>

@@ -51,4 +51,15 @@ describe "A user visits '/trips/:id'" do
 
     expect(page).to have_content('Shortest Hiking Distance: 6')
   end
+  it 'they can click a link to go to a trail show page' do
+    trip = Trip.create(name: 'Test 1', start_date: Date.new(2018, 6, 27), end_date: Date.new(2018, 6, 28))
+    trail_1 = trip.trails.create(name: 'Trail 1', length: 6, address: '123 Main St')
+    trail_2 = trip.trails.create(name: 'Trail 2', length: 10, address: '321 Oak St')
+
+    visit trip_path(trip)
+
+    click_link trail_1.name
+
+    expect(current_path).to eq(trail_path(trail_1))
+  end
 end
