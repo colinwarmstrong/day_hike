@@ -24,4 +24,6 @@ describe "A user visits '/trips/:id'" do
 
     expect(page).to have_content('Total Distance: 15')
   end
+  it 'they see the average hiking distance of all trails on that hiking trip' do
+  end
 end

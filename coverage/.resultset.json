@@ -215,6 +215,8 @@
         null,
         1,
         null,
+        1,
+        null,
         null
       ],
       "/Users/colinarmstrong/Turing/mod2/day_hike/app/models/trip.rb": [
@@ -224,6 +226,10 @@
         null,
         1,
         3,
+        null,
+        null,
+        1,
+        0,
         null,
         null
       ],
@@ -261,6 +267,6 @@
         null
       ]
     },
-    "timestamp": 1532709170
+    "timestamp": 1532709305
   }
 }
