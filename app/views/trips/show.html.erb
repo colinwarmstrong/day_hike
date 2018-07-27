@@ -4,6 +4,7 @@
 <h3>Average Hiking Distance: <%= @trip.average_hiking_distance %></h3>
 <h3>Longest Hiking Distance: <%= @trip.longest_hiking_distance %></h3>
 
+
 <% @trip.trails.each do |trail| %>
   <%= trail.name %>
   <%= trail.length %>
